@@ -12,7 +12,7 @@
       <nav class="menu-main">
         <ul>
           <li><a href="#" class="menu-link">Каталог</a>
-            <ul class="menu-hover">
+            <ul class="head-hover submenu">
               <li class="menu-link-2"><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -25,13 +25,13 @@
       </nav>
       <div class="user-block">
         <a href="#" class="search"></a>
-        <div class="menu-hover">
+        <div class="head-hover">
           <form action="#" method="get">
             <input type="text" name="search-field" placeholder="Что ищем?">
           </form>
         </div>
         <a href="#" class="login">Вход</a>
-        <div class="menu-hover">
+        <div class="head-hover">
           <form action="#" method="post">
             <input type="text" name="login-mail" value="" placeholder="Электронная почта">
             <input type="password" name="login-password" value="" placeholder="Пароль">
@@ -40,15 +40,7 @@
           <a href="#" class="login-links">Забыли пароль?</a>
           <a href="#" class="login-links">Новая регистрация</a>
         </div>
-        <a href="#" class="busket">Пусто</a>
-        <div class="menu-hover">
-          <ul class="busket-list">
-            <li><img src="img/cat-photo1.png" alt="Сливочное №1" width="40" height="40">Пломбир с апельсиновым джемом 1,5 кг х 200 руб. 300 руб.</li>
-            <li><img src="img/cat-photo3.png" alt="Сливочное №3" width="40" height="40">Клубничный пломбир с присыпкой из белого шоколада 1,5 кг х 300 руб. 450 руб.</li>
-          </ul>
-          <span class="busket-list-result">Итого: </span><span class="busket-list-result">750 руб.</span>
-          <a href="#" class="all-buttons">Оформить заказ</a>
-        </div>
+        <a href="#" class="card">Пусто</a>
       </div>
       <div class="contacts">
         <span class="time">С 10 до 20, ежедневно</span>
@@ -68,12 +60,12 @@
       </div>
 <!-- АКЦИИ -->
 	    <section class="special-offers">
-        <div class="special-offers-left">
+        <div class="half-container special-offers-1">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a href="#" class="all-buttons">Хочу варенье!</a>
         </div>
-        <div class="special-offers-right">
+        <div class="half-container special-offers-2">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a href="#" class="all-buttons">Хочу шоколадки!</a>
@@ -112,27 +104,21 @@
 		</section>
 <!-- ПРЕИМУЩЕСТВА -->
 	    <section class="features">
-        <span>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>
-        <div class="features-item">
-          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        </div>
-        <div class="features-item">
-          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
-        <div class="features-item">
-          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="features-item">
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-        </div>
+        <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+        <ul>
+          <li class="features-item features-make"><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
+          <li class="features-item features-eco"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
+          <li class="features-item features-farm"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
+          <li class="features-item features-pack"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+        </ul>
       </section>
 <!-- БЛОГ + ПОДПИСКА -->
-      <div class="blog-form">
-        <div class="blog">
+      <div class="blog-mailing">
+        <div class="half-container blog">
           <b>Новое в нашем блоге</b>
-          <a class="blog-item">10 способов сервировки<br>фруктовых щербетов к<br>столу</a>
+          <a class="blog-item">10 способов сервировки фруктовых щербетов к столу</a>
         </div>
-        <div class="form">
+        <div class="half-container mailing">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
           <form action="#" method="post" class="mailing-form">
            <input type="text" name="user-mail" value="" placeholder="Электронная почта">
@@ -144,11 +130,11 @@
       <div class="map">
         <img src="img/map.png" alt="Карта" width="1200" height="430">
         <div class="map-contacts">
-          <p>Адрес главного офиса и офлайн магазина:</p>
-          <span class="big-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-          <p>Для заказов по телефону:</p>
-          <span class="big-text">8 812 450-25-25</span>
-          <p>(с 10 до 20 ежедневно)</p>
+          <p>Адрес главного офиса и офлайн магазина:
+            <span class="big-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+          <p>Для заказов по телефону:
+            <span class="big-text">8 812 450-25-25</span>
+            (с 10 до 20 ежедневно)</p>
           <a href="#" class="all-buttons">Форма обратной связи</a>
           <div class="popup">
             <span class="popup-header">Мы обязательно вам ответим!</span>
