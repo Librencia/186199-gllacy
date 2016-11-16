@@ -6,13 +6,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header-main">
 <!-- ШАПКА -->
-      <a href="#" title="Перейти на главную"><img src="img/logo.svg" alt="Логотип компании" width="154" height="64"></a>
-      <nav class="menu-main">
+    <header class="main-header clearfix">
+      <div class="index-logo">
+        <a href="#" title="Перейти на главную"><img src="img/logo.png" alt="Логотип компании" width="154" height="64"></a>
+      </div>
+      <nav class="main-menu">
         <ul>
           <li><a href="#" class="menu-link">Каталог</a>
-            <ul class="head-hover  submenu">
+            <ul class="head-hover submenu">
               <li class="menu-link-2"><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -40,18 +42,18 @@
           <a href="#" class="login-links">Забыли пароль?</a>
           <a href="#" class="login-links">Новая регистрация</a>
         </div>
-        <a href="#" class="card">Пусто</a>
-        <div class="head-hover">
-          <ul class="card-list">
+        <a href="#" class="cart">2 товара</a>
+        <div class="cart-hover">
+          <ul class="cart-list">
             <li><img src="img/cat-photo1.png" alt="Сливочное №1" width="40" height="40">Пломбир с апельсиновым джемом 1,5 кг х 200 руб. 300 руб.</li>
             <li><img src="img/cat-photo3.png" alt="Сливочное №3" width="40" height="40">Клубничный пломбир с присыпкой из белого шоколада 1,5 кг х 300 руб. 450 руб.</li>
           </ul>
-          <span class="card-list-result">Итого: </span><span class="card-list-result">750 руб.</span>
+          <span class="cart-list-result">Итого: </span><span class="cart-list-result">750 руб.</span>
           <a href="#" class="all-buttons">Оформить заказ</a>
         </div>
       </div>
       <div class="contacts">
-        <span class="time">С 10 до 20, ежедневно</span>
+        <span class="time">С 10 до 20, ежедневно</span><br>
         <span class="tel">8 812 450-25-25<span>
       </div>
       <ul class="breadcrumbs">
@@ -60,10 +62,10 @@
           <li>Сливочное</li>
       </ul>
     </header>
+<!-- ФИЛЬТРЫ -->
     <main class="content">
       <h1>Сливочное мороженое</h1>
-<!-- ФИЛЬТРЫ -->
-      <form action="#" method="post">
+      <form action="#" method="post" class="filters">
         <label for="sort" class="filter-label">Сортировка:</label>
         <select name="sort-by" id="sort">
           <option value="popular"><span class="filter-text">по популярности</span></option>
@@ -96,78 +98,78 @@
         <label for="jam" class="filter-text">джемы</label>
         <a href="#" title="Применить выбранные фильтры" class="filter-button">Применить</a>
       </form>
-      <section class="catalog">
 <!-- ПЕРВЫЙ РЯД КАТАЛОГА -->
+      <section class="catalog">
 		    <div class="catalog-item">
-			    <img src="img/cat-photo1.png" alt="Сливочное №1" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo1.png" alt="Сливочное №1" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">310 Р/кг</span>
 			    <p class="catalog-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
         <div class="catalog-item">
-			    <img src="img/cat-photo2.png" alt="Сливочное №2" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo2.png" alt="Сливочное №2" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">380 Р/кг</span>
 			    <p class="catalog-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
 		    <div class="catalog-item">
-			    <img src="img/cat-photo3.png" alt="Сливочное №3" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo3.png" alt="Сливочное №3" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">355 Р/кг</span>
 			    <p class="catalog-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
-		    <div class="catalog-item">
-			    <img src="img/cat-photo4.png" alt="Сливочное №4" width="267" height="267" class="catalog-photo">
+		    <div class="catalog-item last-item">
+			    <img src="img/cat-photo4.png" alt="Сливочное №4" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">415 Р/кг</span>
 			    <p class="catalog-description">Сливочное крем-брюле с карамельной подливкой</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
 <!-- ВТОРОЙ РЯД КАТАЛОГА -->
         <div class="catalog-item">
-			    <img src="img/cat-photo5.png" alt="Сливочное №5" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo5.png" alt="Сливочное №5" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">325 Р/кг</span>
 			    <p class="catalog-description">Сливочное с брусничным джемом</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
         <div class="catalog-item">
-			    <img src="img/cat-photo6.png" alt="Сливочное №6" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo6.png" alt="Сливочное №6" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">410 Р/кг</span>
 			    <p class="catalog-description">Сливочно-черничное с цельными ягодами черники</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
 		    <div class="catalog-item">
-			    <img src="img/cat-photo7.png" alt="Сливочное №7" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo7.png" alt="Сливочное №7" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">375 Р/кг</span>
 			    <p class="catalog-description">Сливочно-лимонное с карамельной присыпкой</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
-		    <div class="catalog-item">
-			    <img src="img/cat-photo8.png" alt="Сливочное №8" width="267" height="267" class="catalog-photo">
+		    <div class="catalog-item last-item">
+			    <img src="img/cat-photo8.png" alt="Сливочное №8" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">320 Р/кг</span>
 			    <p class="catalog-description">Сливочное с шоколадной стружкой</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
 <!-- ТРЕТИЙ РЯД КАТАЛОГА -->
         <div class="catalog-item">
-			    <img src="img/cat-photo9.png" alt="Сливочное №9" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo9.png" alt="Сливочное №9" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">440 Р/кг</span>
 			    <p class="catalog-description">Сливочно-ванильное с кусочками шоколада</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
         <div class="catalog-item">
-			    <img src="img/cat-photo10.png" alt="Сливочное №10" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo10.png" alt="Сливочное №10" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">435 Р/кг</span>
 			    <p class="catalog-description">Сливочноe с ментоловым сиропом</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
 		    <div class="catalog-item">
-			    <img src="img/cat-photo11.png" alt="Сливочное №11" width="267" height="267" class="catalog-photo">
+			    <img src="img/cat-photo11.png" alt="Сливочное №11" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">355 Р/кг</span>
 			    <p class="catalog-description">Сливочное с кусочками черного шоколада</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
 		    </div>
-		    <div class="catalog-item">
-			    <img src="img/cat-photo12.png" alt="Сливочное №12" width="267" height="267" class="catalog-photo">
+		    <div class="catalog-item last-item">
+			    <img src="img/cat-photo12.png" alt="Сливочное №12" width="200" height="200" class="catalog-photo">
 			    <span class="catalog-price">420 Р/кг</span>
 			    <p class="catalog-description">Сливочное с мятным сиропом</p>
           <a href="#" title="Посмотреть характеристики" class="all-buttons">Быстрый просмотр</a>
@@ -181,25 +183,24 @@
         <li class="pagination-item"><a href="#">5</a></li>
       </ul>
     </main>
-    <footer class="footer-main">
-      <div class="container">
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-f" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-b" href="#"></a>
-        </section>
-        <section class="footer-links">
-          <a href="#" class="footer-text"><b>Для поставщиков</b></a>
-          <a href="#" class="footer-text">О производстве</a>
-          <a href="#" class="footer-text">Наши документы</a>
-          <a href="#" class="footer-text">Экологические стандарты</a>
-        </section>
-        <section class="footer-copyright">
-          <img src="img/footer-cr.png" alt="Логотип HTMLA" width="108" height="38">
-          <span class="footer-text">Сделано в HTML Academy © 2016</span>
-        </section>
-      </div>
+<!-- ПОДВАЛ -->
+    <footer class="main-footer clearfix">
+      <section class="footer-social">
+         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+         <a class="social-btn social-btn-f" href="#">Фейсбук</a>
+         <a class="social-btn social-btn-b" href="#">ВКонтакте</a>
+      </section>
+      <section class="footer-menu">
+         <a href="#" class="footer-text"><b>Для поставщиков</b></a>
+         <a href="#" class="footer-text">О производстве</a>
+         <a href="#" class="footer-text">Наши документы</a>
+         <a href="#" class="footer-text">Экологические стандарты</a>
+      </section>
+      <section class="footer-copyright">
+         <img src="img/footer-cr.png" alt="Логотип HTMLA" width="108" height="38">
+         <p class="footer-text">Сделано в HTML Academy © 2016</p>
+      </section>
     </footer>
   </body>
 </html>
